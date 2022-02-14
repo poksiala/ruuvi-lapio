@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ruuvi-lapio"
+version = "0.2.1"
+description = "A simple app that sends sensory data over http"
+license = "MIT"
+authors = ["Panu Oksiala <panu@oksiala.fi>"]
+repository = "https://github.com/poksiala/ruuvi-lapio"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+ruuvitag-sensor = "^1.2.0"
+aiohttp = "^3.8.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.12b0"
+mypy = "^0.931"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

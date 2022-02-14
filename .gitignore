@@ -1,0 +1,4 @@
+*.pyc
+dist/
+.venv/
+.mypy_cache/
