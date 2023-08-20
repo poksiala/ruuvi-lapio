@@ -34,7 +34,7 @@ import json
 from concurrent.futures import Future
 import asyncio
 from aiohttp import ClientSession, TCPConnector
-from typing import Callable, Dict, List
+from typing import Callable, Dict, List, Union
 
 
 async def handle_queue(
@@ -42,7 +42,7 @@ async def handle_queue(
     queue,
     future: Future,
     verify_ssl=True,
-    api_key: str | None = None,
+    api_key: Union[str, None] = None,
 ):
     async def send_post(session, update_data, headers: Dict[str, str]):
         async with session.post(

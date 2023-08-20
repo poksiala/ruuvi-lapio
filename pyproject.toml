@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ruuvi-lapio"
-version = "0.3.0"
+version = "0.3.1"
 description = "A simple app that sends sensory data over http"
 license = "MIT"
 authors = ["Panu Oksiala <panu@oksiala.fi>"]
